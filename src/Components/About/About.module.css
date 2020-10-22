@@ -1,0 +1,50 @@
+.about {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "main";
+  grid-template-rows: auto;
+  font-family: "Open Sans Condensed", sans-serif;
+  justify-content: center;
+  background-color: rgba(238, 221, 221, 0.15)  ;
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+  color: #5c0511;
+  font-size: 1.25rem;
+  margin: 0.75rem auto;
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas: "image text";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.image {
+  grid-area: image;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.text {
+  grid-area: text;
+  text-align: justify;
+  display: flex;
+  font-size: 1.2rem;  
+  width: 100%;
+}
+
+.text p {
+  width: 75%;
+  font-family: sans-serif;
+  font-weight: 500;
+}
