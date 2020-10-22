@@ -1,19 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import List from '../List/List';
 import { headerItemBilbo,  header, headerUnlist } from './Header.module.css';
 
-export default class Header extends Component {
-  render() {
-    return (
-      <header className={ header }>
+const Header = () => {
+  return (
+    <header className={ header }>
         <ul className={ headerUnlist }>
           <List>Drinks</List>
-          <List>Sobre Nós</List>
+          <List> <NavLink to="about">Sobre Nós</NavLink> </List>
           <List style={ headerItemBilbo }>Bons Drinks</List>
           <List>Nosso Time</List>
-          <List>Contato</List>
+          <List> <NavLink to="/">Contato</NavLink> </List>
         </ul>
       </header>
-    )
-  }
+  )
 }
+
+export default Header
+

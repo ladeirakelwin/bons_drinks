@@ -1,8 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default class List extends Component {
-
-  render() {
-    return ( <li className={this.props.style}>{this.props.children}</li> )
-  }
+const List = (props) => {
+  return (
+    <li className={props.style}>{props.children}</li>
+  )
 }
+
+export default List
+

@@ -1,21 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import FormFields from './FormFields';
 import FormArea from './FormArea';
 import Button from '../Generics/Button';
 import img from '../../assets/img/contact-pic.jpg';
-import { formGroup, contato, label, input, area, title, button, image, form, fields } from './Contato.module.css'
+import { formGroup, contato, label, input, area, title, button, image, form, fields } from './Contato.module.css';
 
-
-export default class Contato extends Component {
-
-  render() {
-    return (
-      <section className={contato}>
+const Contato = () => {
+  return (
+    <section className={contato}>
         <div class={title}>
           <h1>Contato</h1>
         </div>
         <section className={form}>
-          <div class={image}>
+          <div className={image}>
             <img src={img} alt="logo" />
           </div>
           <form className={fields}>
@@ -34,6 +31,7 @@ export default class Contato extends Component {
           </form>
         </section>
       </section>
-    )
-  }
+  )
 }
+
+export default Contato
