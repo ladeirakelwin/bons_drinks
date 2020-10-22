@@ -1,3 +1,8 @@
+footer {
+  box-shadow: 1px 1px 10px #B0B0B0;
+  margin-top: 1.5rem;
+}
+
 .copyright {
   background:  #FFFBEF;
   color:#101010;
