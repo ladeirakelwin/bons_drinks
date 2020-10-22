@@ -1,0 +1,7 @@
+.title {
+  grid-area: title;
+  text-align: center;
+  color: #5c0511;
+  font-size: 1.25rem;
+  margin: 0.75rem auto;
+}

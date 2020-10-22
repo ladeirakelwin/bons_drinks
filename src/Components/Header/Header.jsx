@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className={ header }>
         <ul className={ headerUnlist }>
-          <List>Drinks</List>
+          <List><NavLink to="drinks">Drinks</NavLink></List>
           <List> <NavLink to="about">Sobre Nós</NavLink> </List>
           <List style={ headerItemBilbo }>Bons Drinks</List>
           <List>Nosso Time</List>
