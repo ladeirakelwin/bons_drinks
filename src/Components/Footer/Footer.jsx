@@ -4,7 +4,7 @@ import { copyright } from './Footer.module.css';
 const Footer = () => {
 	return (
 		<footer>
-			<p className={copyright}>"Resilia 2020 - Alguns direitos reservados"</p>
+			<p className={copyright}>Resilia 2020 - Alguns direitos reservados</p>
 		</footer>
 	)
 }
